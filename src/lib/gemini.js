@@ -1,7 +1,7 @@
 // src/lib/gemini.js
 
 // ⚠️ ARTIK GOOGLE'A DEĞİL, SENİN SUNUCUNA GİDİYORUZ
-const BACKEND_AI_URL = "http://localhost:3000/api/ai-oneri";
+const BACKEND_AI_URL = "https://smartsuggest-71e8.onrender.com/api/ai-oneri";
 
 export async function askGemini(prompt) {
   try {

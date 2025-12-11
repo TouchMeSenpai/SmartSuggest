@@ -3,7 +3,7 @@
 const API_KEY = import.meta.env.VITE_OMDB_API_KEY; 
 const BASE_URL = "https://www.omdbapi.com/";
 const GOOGLE_BOOKS_URL = "https://www.googleapis.com/books/v1/volumes";
-const LOCAL_SERVER_URL = "http://localhost:3000/api";
+const LOCAL_SERVER_URL = "https://smartsuggest-71e8.onrender.com/api";
 
 // --- ARAMA FONKSİYONLARI ---
 export async function searchMovies(query) {
