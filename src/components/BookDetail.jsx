@@ -35,8 +35,11 @@ export default function BookDetail({ book, similarBooks, onSelectBook, onClose, 
             </div>
             
             <div className="flex gap-3 mt-auto">
-               {/* AMAZON BUTONU */}
-               <a href={book.ViewLink} target="_blank" rel="noopener noreferrer"
+               {/* AMAZON BUTONU - FİXLENMİŞ HALİ */}
+               <a 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 href={book.ViewLink ? book.ViewLink : `https://www.amazon.com.tr/s?k=${encodeURIComponent(book.Title || "kitap")}`}
                  className="flex-1 py-3 px-4 rounded-xl font-bold transition shadow-lg flex items-center justify-center gap-2 text-black bg-gradient-to-r from-orange-400 to-yellow-500 hover:from-orange-500 hover:to-yellow-600">
                  🛒 Amazon'da İncele / Satın Al
                </a>
